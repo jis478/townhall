@@ -67,8 +67,14 @@ function Header({ active, onNavigate }) {
         <a href="#" className={active === 'insurance' ? 'active' : ''} onClick={(e) => { e.preventDefault(); go('insurance'); }}>海外旅行傷害保険 / Travel Insurance</a>
         <a href="#" className={active === 'oshc' ? 'active' : ''} onClick={(e) => { e.preventDefault(); go('oshc'); }}>学生保険・OSHC / Student Insurance</a>
         <div className="mobile-cta">
-          <a className="btn btn-accent" href="tel:1800355855" style={{flex:1, justifyContent:'center'}}>📞 1800 355 855</a>
-          <a className="btn btn-ghost" href="tel:0292994661" style={{flex:1, justifyContent:'center'}}>02 9299 4661</a>
+          <div className="btn btn-accent" style={{flex:1, justifyContent:'center', flexDirection:'column', gap:2, cursor:'default'}}>
+            <span style={{fontSize:10, opacity:0.75, fontFamily:'JetBrains Mono, monospace'}}>Free dial</span>
+            <span>1800 355 855</span>
+          </div>
+          <div className="btn btn-ghost" style={{flex:1, justifyContent:'center', flexDirection:'column', gap:2, cursor:'default'}}>
+            <span style={{fontSize:10, opacity:0.6, fontFamily:'JetBrains Mono, monospace'}}>Direct</span>
+            <span>02 9299 4661</span>
+          </div>
         </div>
       </div>
     </>
