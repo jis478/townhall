@@ -57,10 +57,6 @@ function HomePage({ onNavigate }) {
                   <div className="t2">提携保険でその場の自己負担なし</div>
                 </div>
               </div>
-              <div className="hero-floater-2">
-                <div className="label">Free dial</div>
-                <div style={{fontFamily: 'JetBrains Mono, monospace', fontWeight: 600}}>1800 355 855</div>
-              </div>
             </div>
           </div>
         </div>
