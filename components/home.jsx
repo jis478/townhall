@@ -50,17 +50,17 @@ function HomePage({ onNavigate }) {
                   style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block'}}
                 />
               </div>
-              <a href="tel:1800355855" className="hero-floater" style={{textDecoration:'none'}}>
+              <div className="hero-floater">
                 <div className="ico">¥0</div>
                 <div>
                   <div className="t1">キャッシュレス診療</div>
                   <div className="t2">提携保険でその場の自己負担なし</div>
                 </div>
-              </a>
-              <a href="tel:1800355855" className="hero-floater-2" style={{textDecoration:'none'}}>
+              </div>
+              <div className="hero-floater-2">
                 <div className="label">Free dial</div>
                 <div style={{fontFamily: 'JetBrains Mono, monospace', fontWeight: 600}}>1800 355 855</div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
