@@ -43,8 +43,8 @@ function Header({ active, onNavigate }) {
           </nav>
 
           <div className="cta-row">
-            <div className="btn btn-ghost" style={{cursor:'default'}}>
-              <span style={{opacity:0.6, fontFamily:'JetBrains Mono, monospace', fontSize: 12}}>TEL</span>
+            <div className="btn btn-accent" style={{cursor:'default'}}>
+              <span style={{opacity:0.75, fontFamily:'JetBrains Mono, monospace', fontSize: 12}}>TEL</span>
               1800 355 855
             </div>
             <button
