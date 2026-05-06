@@ -43,10 +43,10 @@ function Header({ active, onNavigate }) {
           </nav>
 
           <div className="cta-row">
-            <a className="btn btn-ghost" href="tel:1800355855">
+            <div className="btn btn-ghost" style={{cursor:'default'}}>
               <span style={{opacity:0.6, fontFamily:'JetBrains Mono, monospace', fontSize: 12}}>TEL</span>
               1800 355 855
-            </a>
+            </div>
             <button
               className={`hamburger${menuOpen ? ' open' : ''}`}
               onClick={() => setMenuOpen(o => !o)}
