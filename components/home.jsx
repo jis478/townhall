@@ -33,9 +33,9 @@ function HomePage({ onNavigate }) {
               </div>
 
               <div className="hero-cta">
-                <a className="btn btn-primary" href="tel:1800355855">
+                <div className="btn btn-primary" style={{cursor:'default'}}>
                   電話で予約 — 1800 355 855
-                </a>
+                </div>
                 <a className="btn btn-ghost" href="#" onClick={(e) => { e.preventDefault(); onNavigate('insurance'); }}>
                   保険について <span className="arrow">→</span>
                 </a>
