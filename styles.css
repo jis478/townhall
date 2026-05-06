@@ -614,7 +614,7 @@ p { margin: 0; }
   .hamburger { display: flex; }
   .cta-row .btn-ghost { display: none; }
 
-  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; display: flex; flex-direction: column; }
   .hero-floater { left: 12px; bottom: -24px; width: 260px; }
   .hero-floater-2 { display: none; }
   .hero-card { aspect-ratio: 4 / 3; }
@@ -648,7 +648,7 @@ p { margin: 0; }
   .hero-meta { gap: 20px; }
   .hero-cta { flex-direction: column; }
   .hero-cta .btn { text-align: center; justify-content: center; }
-  .hero-card { aspect-ratio: 1 / 1; }
+  .hero-card { aspect-ratio: 4 / 5; }
   .hero-floater { display: none; }
 
   .svc-grid { grid-template-columns: 1fr; }

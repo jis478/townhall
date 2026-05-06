@@ -7,13 +7,9 @@ function HomePage({ onNavigate }) {
       <section className="hero">
         <div className="container">
           <div className="hero-grid">
-            <div>
-              <span className="hero-eyebrow">
-                <span className="pill">Sydney CBD</span>
-                25年以上の信頼と実績
-              </span>
+            <div style={{order: 2}}>
               <h1>
-                海外でも、<br/>
+                オーストラリアでも、<br/>
                 <span className="accent">日本語で</span>安心の<br/>
                 医療サービス。
               </h1>
@@ -46,12 +42,12 @@ function HomePage({ onNavigate }) {
               </div>
             </div>
 
-            <div style={{position: 'relative'}}>
+            <div style={{position: 'relative', order: 1}}>
               <div className="hero-card" style={{cursor:'pointer'}} onClick={() => onNavigate('clinic')}>
                 <img
                   src="assets/hero.png"
                   alt="Townhall Clinic"
-                  style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block'}}
+                  style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block'}}
                 />
               </div>
               <a href="tel:1800355855" className="hero-floater" style={{textDecoration:'none'}}>
