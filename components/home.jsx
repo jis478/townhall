@@ -8,11 +8,6 @@ function HomePage({ onNavigate }) {
         <div className="container">
           <div className="hero-grid">
             <div style={{order: 2}}>
-              <h1>
-                オーストラリアでも、<br/>
-                <span className="accent">日本語で</span>安心の<br/>
-                医療サービス。
-              </h1>
               <p className="hero-sub">
                 経験豊富な日本人通訳が常勤。予約から入院手配、専門医の診察まで、すべて日本語でしっかりサポートします。提携保険会社のキャッシュレスサービスにも対応。
               </p>
