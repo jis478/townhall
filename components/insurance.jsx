@@ -240,12 +240,7 @@ function InsurancePage({ onNavigate }) {
               </p>
             </section>
 
-            <div style={{
-              marginTop: 32, padding: 36,
-              background: 'var(--ink)', color: '#fff',
-              borderRadius: 'var(--radius-lg)',
-              display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 28, alignItems: 'center'
-            }}>
+            <div className="page-cta-block">
               <div>
                 <h3 style={{color: '#fff', fontSize: 26, lineHeight: 1.2, marginBottom: 10}}>ご不明な点は、お気軽にお電話を。</h3>
                 <p style={{color: '#a8b3c4', fontSize: 15}}>

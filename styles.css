@@ -522,6 +522,43 @@ p { margin: 0; }
 .bring-tile .desc { font-size: 13px; color: var(--ink-mute); margin-top: 4px; }
 
 /* ---------- Mobile ---------- */
+/* ── Bottom CTA block (insurance / oshc pages) ── */
+.page-cta-block {
+  margin-top: 32px;
+  padding: 36px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .page-cta-block { grid-template-columns: 1fr; gap: 20px; padding: 28px 24px; }
+}
+
+/* ── Clinic page ── */
+.clinic-top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.clinic-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+@media (max-width: 980px) {
+  .clinic-top-grid { grid-template-columns: 1fr; gap: 28px; }
+  .clinic-features-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .clinic-features-grid { grid-template-columns: 1fr; gap: 16px; }
+}
+
 /* ── Hamburger menu ── */
 .hamburger {
   display: none;
@@ -617,6 +654,7 @@ p { margin: 0; }
   .svc-grid { grid-template-columns: 1fr; }
   .bring-grid { grid-template-columns: 1fr; }
   .partner-grid { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
 
   .contact-strip { padding: 28px 24px; }
   .contact-strip h2 { font-size: 26px; }
