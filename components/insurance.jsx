@@ -72,11 +72,9 @@ function InsurancePage({ onNavigate }) {
       <section className="page-hero">
         <div className="container">
           <div className="crumbs">
-            <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>HOME</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>ホーム</a>
             <span>/</span>
-            <span>SERVICES</span>
-            <span>/</span>
-            <span style={{color: 'var(--accent)'}}>OVERSEAS_TRAVEL_INSURANCE</span>
+            <span style={{color: 'var(--accent)'}}>海外旅行傷害保険</span>
           </div>
           <span className="section-eyebrow">Overseas Travel Insurance</span>
           <h1 style={{marginTop: 14}}>海外旅行傷害保険<br/>＆ キャッシュレス診療</h1>

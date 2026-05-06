@@ -6,9 +6,9 @@ function OshcPage({ onNavigate }) {
       <section className="page-hero">
         <div className="container">
           <div className="crumbs">
-            <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>HOME</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>ホーム</a>
             <span>/</span>
-            <span style={{color: 'var(--accent)'}}>STUDENT_INSURANCE_&amp;_OTHER</span>
+            <span style={{color: 'var(--accent)'}}>学生保険・その他の保険</span>
           </div>
           <span className="section-eyebrow">Student Insurance &amp; Other Coverage</span>
           <h1 style={{marginTop: 14}}>学生保険（OSHC）・<br/>その他の保険</h1>

@@ -143,9 +143,9 @@ function DoctorsPage({ onNavigate }) {
       <section className="page-hero">
         <div className="container">
           <div className="crumbs">
-            <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>HOME</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>ホーム</a>
             <span>/</span>
-            <span style={{ color: 'var(--accent)' }}>DOCTORS_&amp;_THERAPISTS</span>
+            <span style={{ color: 'var(--accent)' }}>ドクター・セラピスト</span>
           </div>
           <span className="section-eyebrow">Our Team</span>
           <h1 style={{ marginTop: 14 }}>ドクター &amp;<br/>セラピスト</h1>

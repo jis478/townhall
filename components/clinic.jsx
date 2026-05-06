@@ -6,9 +6,9 @@ function ClinicPage({ onNavigate }) {
       <section className="page-hero">
         <div className="container">
           <div className="crumbs">
-            <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>HOME</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>ホーム</a>
             <span>/</span>
-            <span style={{color: 'var(--accent)'}}>CLINIC_DETAILS</span>
+            <span style={{color: 'var(--accent)'}}>クリニック詳細</span>
           </div>
           <span className="section-eyebrow">Clinic Details / クリニック詳細</span>
           <h1 style={{marginTop: 14}}>タウンホール<br/>クリニックについて</h1>
