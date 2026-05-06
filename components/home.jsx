@@ -195,27 +195,24 @@ function HomePage({ onNavigate }) {
               </p>
             </div>
             <div className="contact-tiles">
-              <a href="tel:1800355855" className="contact-tile accent" style={{textDecoration:'none'}}>
+              <div className="contact-tile accent">
                 <div>
                   <div className="lbl">Free dial</div>
                   <div className="val">1800 355 855</div>
                 </div>
-                <span style={{fontSize: 22}}>→</span>
-              </a>
-              <a href="tel:0292994661" className="contact-tile" style={{textDecoration:'none'}}>
+              </div>
+              <div className="contact-tile accent">
                 <div>
                   <div className="lbl">Direct</div>
                   <div className="val">02 9299 4661</div>
                 </div>
-                <span style={{fontSize: 22, color: '#8b96a8'}}>→</span>
-              </a>
-              <a href="https://maps.google.com/?q=Level+4,+50+York+St+Sydney" target="_blank" rel="noopener" className="contact-tile" style={{textDecoration:'none'}}>
+              </div>
+              <div className="contact-tile accent">
                 <div>
                   <div className="lbl">Address</div>
                   <div className="val" style={{fontSize: 14, fontFamily: 'inherit'}}>Level 4, 50 York St, Sydney</div>
                 </div>
-                <span style={{fontSize: 22, color: '#8b96a8'}}>→</span>
-              </a>
+              </div>
             </div>
           </div>
         </div>

@@ -134,14 +134,12 @@ function ClinicPage({ onNavigate }) {
               <p className="sub">日本人スタッフが対応いたします。当日のご予約も承ります。</p>
             </div>
             <div className="contact-tiles">
-              <a href="tel:1800355855" className="contact-tile accent" style={{textDecoration:'none'}}>
+              <div className="contact-tile accent">
                 <div><div className="lbl">Free dial</div><div className="val">1800 355 855</div></div>
-                <span style={{fontSize:22}}>→</span>
-              </a>
-              <a href="tel:0292994661" className="contact-tile" style={{textDecoration:'none'}}>
+              </div>
+              <div className="contact-tile accent">
                 <div><div className="lbl">Direct</div><div className="val">02 9299 4661</div></div>
-                <span style={{fontSize:22, color:'#8b96a8'}}>→</span>
-              </a>
+              </div>
             </div>
           </div>
         </div>
