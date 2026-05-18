@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>タウンホールクリニック — フライヤー A6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --teal:      #1f6b6b;
+      --teal-soft: #d9e9e6;
+      --teal-dark: #0e3a3a;
+      --ink:       #0f1d2c;
+      --ink-mute:  #6b7a8c;
+      --line:      #e8e2d6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #b0b8c1;
+      font-family: 'Noto Sans JP', 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      gap: 16px;
+    }
+
+    /* A6 at 96 dpi ≈ 397 × 561 px */
+    .card {
+      width: 397px;
+      min-height: 561px;
+      background: #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 10px 60px rgba(0,0,0,0.25);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Top accent bar ── */
+    .bar-top {
+      height: 8px;
+      background: linear-gradient(90deg, var(--teal-dark) 0%, var(--teal) 60%, #3aa0a0 100%);
+      flex-shrink: 0;
+    }
+
+    /* ── Logo row ── */
+    .logo-row {
+      padding: 20px 24px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--line);
+      flex-shrink: 0;
+    }
+
+    .logo-img {
+      height: 52px;
+      width: auto;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .logo-en {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      text-transform: uppercase;
+    }
+
+    .logo-jp {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0.02em;
+    }
+
+    .logo-service {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--teal);
+      margin-top: 2px;
+    }
+
+    /* ── Main message ── */
+    .body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 28px 12px;
+      text-align: center;
+      gap: 8px;
+    }
+
+    .tag {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: var(--teal-soft);
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .headline {
+      font-size: 34px;
+      font-weight: 900;
+      line-height: 1.2;
+      color: var(--ink);
+      letter-spacing: -0.03em;
+    }
+
+    .headline em {
+      font-style: normal;
+      color: var(--teal);
+    }
+
+    .subtext {
+      font-size: 12px;
+      color: var(--ink-mute);
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* ── QR block ── */
+    .qr-block {
+      margin: 0 20px 20px;
+      background: var(--ink);
+      border-radius: 12px;
+      padding: 16px 18px 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .qr-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.06em;
+      text-align: center;
+    }
+
+    .qr-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .qr-frame {
+      background: #fff;
+      border-radius: 10px;
+      padding: 8px;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-frame img {
+      display: block;
+      width: 134px;
+      height: 134px;
+    }
+
+    .qr-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .qr-label span {
+      display: block;
+      font-size: 10px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.5);
+      margin-top: 3px;
+    }
+
+    @media print {
+      body { background: none; padding: 0; min-height: unset; }
+      .hint { display: none; }
+      .card { box-shadow: none; }
+      @page { size: A6 portrait; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <div class="bar-top"></div>
+
+    <div class="logo-row">
+      <img class="logo-img" src="assets/logo_sv.png" alt="Townhall Clinic" />
+      <div class="logo-text">
+        <span class="logo-jp">タウンホールクリニック</span>
+        <span class="logo-service">日本語医療サービス</span>
+      </div>
+    </div>
+
+    <div class="body">
+      <h1 class="headline">
+        いざという時の<br/>
+        <em>備えに。</em><br/>
+        今すぐ登録！
+      </h1>
+      <p class="subtext">
+        オーストラリア国内ならどこからでも<br/>オンライン受診可能
+      </p>
+    </div>
+
+    <div class="qr-block">
+      <div class="qr-title">📲 スキャンしてください</div>
+      <div class="qr-item">
+        <div class="qr-frame">
+          <img id="qr-img" src="data:image/png;base64,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WIiIiFz44h90JRPzYKcrmXQln2Ye7HQln2YeTLqSna7kp3QlO+bBpCs5ZR5MupKf1JV8mnmw05VMzINT5sEJ82CnK5mYBztdycQ8mHQlO13JCfNgpys5YR7sdCUnupK/kXnwykJEROTCQkRE5MJCRETkwkJEROTCQkRE5MKv33+wYR5MupId82DSlUzMg52uZGIe/KSuZGIenOpKXjEPTnQlP8k8ONWVnDIPJl3JxDw41ZWcMg8mXcnEPPgOXcmnmQc7XcnEPJh0JTvmwad1JRPzYKcrmZgHp7qSiXkw6Up2zINJVzJZiIiIXFiIiIhcWIiIiFxYiIiIXFiIiIhcWIiIiFz49fsPNsyDSVfyinmw05V8mnkw6Up2zINJVzIxD051Ja+YB5Ou5CXz4ERX8op5sNOVTMyDSVdyyjw41ZWcMA92upIT5sFLXcnEPPgbdSWnzINP60om5sFOV3LCPNjpSk4sRERELixEREQuLERERC4sRERELixEREQu/Pr9Bw+ZBye6klPmwStdyU8yD050Jd/BPJh0JafMg1e6kol5sNOVTMyDU13JK+bBia5kxzyYdCU/yTyYdCU75sGkKzllHky6kol58B26kk8zDyZdySsLERGRCwsREZELCxERkQsLERGRCwsREZELv37/wSHz4FRXMjEPdrqSE+bBqa7kFfPgVFcyMQ8mXckp82DSlbxkHky6kol5sNOVvGIenOhKTpkHp7qSTzMPJl3JKfNgpys5YR7sdCUT8+CVruQV8+AndSUT8+CVrmSyEBERubAQERG5sBAREbmwEBERubAQERG5sBAREbnwxTcxD06ZB/8FXcl3MA9OmAenupJXupId82DSlXyaefBKV3LKPJh0JTvmwad1JTvmwaQrmXQlp7qSU+bBxDw41ZX8m3Qln7YQERG5sBAREbmwEBERubAQERG5sBAREbnwxT8wD051JRPz4FRX8op5cMI82OlKXjEPJl3JK13Jd+hKJubBpCvZ6Uom5sGkKznVlbxiHrzSlUzMg59kHux0JRPzYNKV7JgHP6UreaUrecU82DEPPq0rmSxEREQuLERERC4sRERELixEREQuLERERC588Q+6kol5sGMeTLqSiXlwyjyYdCWnzINJV/I3Mg92upKJeTDpSl4yD14xDyZdycQ8eMU82OlKPs08mHQlp8yDU+bBpCv5Dl3J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" alt="QR code" />
+        </div>
+        <div class="qr-label">
+          連絡先を保存
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  
+  <script>
+    const vcard = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      'FN:タウンホールクリニック',
+      'ORG:Townhall Clinic',
+      'TEL;TYPE=VOICE,PREF:+611800355855',
+      'TEL;TYPE=VOICE:+61292994661',
+      'ADR;TYPE=WORK:;;Level 4\\, 50 York St;Sydney;NSW;2000;Australia',
+      'URL:https://townhallclinic.com.au',
+      'NOTE:シドニーCBD日本語医療サービス',
+      'END:VCARD'
+    ].join('\r\n');
+
+    const mapsUrl = 'https://maps.google.com/?q=Level+4,+50+York+St,+Sydney+NSW+2000,+Australia';
+
+    const opts = { width: 134, margin: 1, color: { dark: '#0f1d2c', light: '#ffffff' }, errorCorrectionLevel: 'M' };
+
+    QRCode.toDataURL(vcard, opts, function(err, url) {
+      if (err) { console.error(err); return; }
+      document.getElementById('qr-img').src = url;
+      window._qrUrl = url;
+    });
+
+    function downloadQR() {
+      const a = document.createElement('a');
+      a.download = 'townhall-clinic-qr.png';
+      a.href = window._qrUrl;
+      a.click();
+    }
+  </script>
+</body>
+</html>
